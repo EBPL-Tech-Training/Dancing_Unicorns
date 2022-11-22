@@ -15,7 +15,7 @@ let ampHistory = [];
 
 // audio file is loaded before anything else starts
 function preload() {
-  song = loadSound('pinkunicorns.mp3');
+  song = loadSound('https://github.com/EBPL-Tech-Training/Dancing_Unicorns/blob/main/pinkunicorns.mp3?raw=true');
 }
 
 
