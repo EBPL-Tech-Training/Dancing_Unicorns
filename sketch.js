@@ -17,7 +17,7 @@ let r =20;
 // Draws the canvas
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(10, 10);
  
   
    
