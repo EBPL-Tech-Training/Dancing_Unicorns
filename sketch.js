@@ -1,68 +1,36 @@
-// Falling rectangles
-// Change the code: 
-// size of the rectangle
-//change the color of the background
-// chnage the color of the rectangle
-//notice the functions 
-// try to use parameters in your function 
 
 
-// declare global variables
-
-let y =0;
-let r =20; 
-
-
-// happens once
-// Draws the canvas
+// Nested Loops
+// Code! Programming with p5.js
+// The Coding Train / Daniel Shiffman
+// https://thecodingtrain.com/beginners/p5js/4.2-nested-loops.html
+// https://youtu.be/1c1_TMdf8b8
+// https://editor.p5js.org/codingtrain/sketches/nxJTfiJd
 
 function setup() {
 let canvas = createCanvas(300, 300);
   canvas.parent('sketch-container');
  
-  
+  background(0);
    
    
   }
-//repeats forever
-// the function drawRect() and move() are called and repeat //forever
+
+
+
 function draw() {
   
-   background(151,191,221);
-// Call functions
-  drawRect();
-  
-  move();
-  
-}
-
-
-//Define functions
-// function move(), makes the rectagles move vertically (y axis)
-
-
-function move(){
- 
-  x= x + random(-1, 2);
-  y = y + random(-1, 2);
-   
-}
-
-//function drawRect() the rectangles are drawn at different x and y possiiton until they are accros the width of the canvas: i < width
-// is increaed by 80 pixels each time the for loop runs. 
-
-function drawRect() {
+  strokeWeight(4);
   stroke(255);
-  fill(200, 120);
-  x=0;
 
- for (let i=0; i<width ; i++){
-  rect(x, y, r, r);
-   // second rectangle has to be different from the first rectangle, we add 25 to the x and subract 30 pixels to the y. 
-  rect(x+25, y-30, r,r);
-   
-  x= x+80;
-  
- }
+  for (var x = 0; x <= width; x += 50) {
+    for (var y = 0; y <= height; y += 50) {
+      fill(random(255), 0, random(255));
+      ellipse(x, y, 25, 25);
+    }
+  }
 }
 
+function drawBackground() {
+  background(random(255), random(255), random(255));
+}
