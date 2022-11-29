@@ -26,6 +26,8 @@ function setup() {
 //repeats forever
 // the function drawRect() and move() are called and repeat //forever
 function draw() {
+  let canvas = createCanvas(300, 300);
+  canvas.parent('sketch');
    background(151,191,221);
 // Call functions
   drawRect();
