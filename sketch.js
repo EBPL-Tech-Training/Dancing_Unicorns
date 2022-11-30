@@ -17,7 +17,6 @@ let canvas = createCanvas(300, 300);
   }
 
 
-
 function draw() {
   
   strokeWeight(4);
